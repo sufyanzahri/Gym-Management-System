@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{53A59E92-0719-4B5D-81B7-56AE28CD7589}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>GymNew.My.MyApplication</StartupObject>
+    <RootNamespace>GymNew</RootNamespace>
+    <AssemblyName>GymNew</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>GymNew.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>GymNew.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddPaymentDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AddPaymentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllMembersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllMembersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllMembersForm.Designer.vb">
+      <DependentUpon>AllMembersForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllMembersForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddMemberForm.Designer.vb">
+      <DependentUpon>AddMemberForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddMemberForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllPaymentsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllPaymentsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllStaffDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AllStaffDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AllPaymentsForm.Designer.vb">
+      <DependentUpon>AllPaymentsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllPaymentsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AllStaffForm.Designer.vb">
+      <DependentUpon>AllStaffForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AllStaffForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddStaffForm.Designer.vb">
+      <DependentUpon>AddStaffForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddStaffForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddPaymentForm.Designer.vb">
+      <DependentUpon>AddPaymentForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddPaymentForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindMemberForm.Designer.vb">
+      <DependentUpon>FindMemberForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindMemberForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindMembersDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindMembersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="About.Designer.vb">
+      <DependentUpon>About.vb</DependentUpon>
+    </Compile>
+    <Compile Include="About.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FindStaffsDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FindStaffsDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FindStaffsForm.Designer.vb">
+      <DependentUpon>FindStaffsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FindStaffsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Receipt.Designer.vb">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Receipt.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignIn.Designer.vb">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SignIn.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen.Designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomeForm.Designer.vb">
+      <DependentUpon>HomeForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TestingDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TestingDataSet.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddStaffForm.resx">
+      <DependentUpon>AddStaffForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllMembersForm.resx">
+      <DependentUpon>AllMembersForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddMemberForm.resx">
+      <DependentUpon>AddMemberForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllPaymentsForm.resx">
+      <DependentUpon>AllPaymentsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AllStaffForm.resx">
+      <DependentUpon>AllStaffForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddPaymentForm.resx">
+      <DependentUpon>AddPaymentForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindMemberForm.resx">
+      <DependentUpon>FindMemberForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FindStaffsForm.resx">
+      <DependentUpon>FindStaffsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Receipt.resx">
+      <DependentUpon>Receipt.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignIn.resx">
+      <DependentUpon>SignIn.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomeForm.resx">
+      <DependentUpon>HomeForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AddPaymentDataSet.xsc">
+      <DependentUpon>AddPaymentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AddPaymentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AddPaymentDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AddPaymentDataSet.xss">
+      <DependentUpon>AddPaymentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllMembersDataSet.xsc">
+      <DependentUpon>AllMembersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllMembersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllMembersDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllMembersDataSet.xss">
+      <DependentUpon>AllMembersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllPaymentsDataSet.xsc">
+      <DependentUpon>AllPaymentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllPaymentsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllPaymentsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllPaymentsDataSet.xss">
+      <DependentUpon>AllPaymentsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllStaffDataSet.xsc">
+      <DependentUpon>AllStaffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AllStaffDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AllStaffDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AllStaffDataSet.xss">
+      <DependentUpon>AllStaffDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindMembersDataSet.xsc">
+      <DependentUpon>FindMembersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindMembersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindMembersDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindMembersDataSet.xss">
+      <DependentUpon>FindMembersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindStaffsDataSet.xsc">
+      <DependentUpon>FindStaffsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="FindStaffsDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>FindStaffsDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FindStaffsDataSet.xss">
+      <DependentUpon>FindStaffsDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="TestingDataSet.xsc">
+      <DependentUpon>TestingDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="TestingDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TestingDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TestingDataSet.xss">
+      <DependentUpon>TestingDataSet.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Gym.accdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

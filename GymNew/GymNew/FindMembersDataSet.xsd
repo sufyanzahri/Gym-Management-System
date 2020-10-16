@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="FindMembersDataSet" targetNamespace="http://tempuri.org/FindMembersDataSet.xsd" xmlns:mstns="http://tempuri.org/FindMembersDataSet.xsd" xmlns="http://tempuri.org/FindMembersDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="MySettings" AppSettingsPropertyName="AllMembersConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="AllMembersConnectionString (MySettings)" PropertyReference="ApplicationSettings.GymNew.My.MySettings.GlobalReference.Default.AllMembersConnectionString" Provider="System.Data.OleDb" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="MembersTableAdapter" GeneratorDataComponentClassName="MembersTableAdapter" Name="Members" UserDataComponentName="MembersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="AllMembersConnectionString (MySettings)" DbObjectName="Members" DbObjectType="Table" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="false" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>SELECT        ID, Member_Name, Member_Package, Phone, Date_Joined, Date_Expired
+FROM            Members
+ORDER BY ID</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="Member_Name" DataSetColumn="Member_Name" />
+              <Mapping SourceColumn="Member_Package" DataSetColumn="Member_Package" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="Date_Joined" DataSetColumn="Date_Joined" />
+              <Mapping SourceColumn="Date_Expired" DataSetColumn="Date_Expired" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="FindMembersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="FindMembersDataSet" msprop:Generator_UserDSName="FindMembersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Members" msprop:Generator_TableClassName="MembersDataTable" msprop:Generator_TableVarName="tableMembers" msprop:Generator_RowChangedName="MembersRowChanged" msprop:Generator_TablePropName="Members" msprop:Generator_RowDeletingName="MembersRowDeleting" msprop:Generator_RowChangingName="MembersRowChanging" msprop:Generator_RowEvHandlerName="MembersRowChangeEventHandler" msprop:Generator_RowDeletedName="MembersRowDeleted" msprop:Generator_RowClassName="MembersRow" msprop:Generator_UserTableName="Members" msprop:Generator_RowEvArgName="MembersRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="Member_Name" msprop:Generator_ColumnVarNameInTable="columnMember_Name" msprop:Generator_ColumnPropNameInRow="Member_Name" msprop:Generator_ColumnPropNameInTable="Member_NameColumn" msprop:Generator_UserColumnName="Member_Name" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="536870910" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Member_Package" msprop:Generator_ColumnVarNameInTable="columnMember_Package" msprop:Generator_ColumnPropNameInRow="Member_Package" msprop:Generator_ColumnPropNameInTable="Member_PackageColumn" msprop:Generator_UserColumnName="Member_Package" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="255" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" type="xs:int" minOccurs="0" />
+              <xs:element name="Date_Joined" msprop:Generator_ColumnVarNameInTable="columnDate_Joined" msprop:Generator_ColumnPropNameInRow="Date_Joined" msprop:Generator_ColumnPropNameInTable="Date_JoinedColumn" msprop:Generator_UserColumnName="Date_Joined" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Date_Expired" msprop:Generator_ColumnVarNameInTable="columnDate_Expired" msprop:Generator_ColumnPropNameInRow="Date_Expired" msprop:Generator_ColumnPropNameInTable="Date_ExpiredColumn" msprop:Generator_UserColumnName="Date_Expired" type="xs:dateTime" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:Members" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
